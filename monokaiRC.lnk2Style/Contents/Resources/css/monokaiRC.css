@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Bitstream Vera Mono";
+  font-style: normal;
+  src: url(../font/VeraMono.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bitstream Vera Mono";
+  font-weight: bold;
+  font-style: normal;
+  src: url(../font/VeraMoBd.ttf) format("truetype");
+}
+
+body {
+	background-color: #262821;
+	color: #C2C4C9;
+	font-style: normal;
+	font-family: "Bitstream Vera Mono";
+}
+
+p { 
+	font-family: "Bitstream Vera Mono";
+	font-style: normal;
+	margin:0px;
+	padding:0px;
+	margin-left: 50px;
+	text-indent: -50px;
+}
+
+a, a:visited, a:active {
+	color:#fff;
+	text-decoration: none;
+	font-style: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div#overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.5;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+	z-index: 100;
+}
+
+div#overlay p {
+    height: 50%;
+    text-align: center;
+    top: 20%;
+    font-size: 32px;
+    color:  #ddd;
+}
+		
+div#topic {
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 22px;
+    min-height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    z-index: 80;
+	  font-style: normal;
+}
+
+div#topic span#topicText {
+	padding-top:3px;
+	padding-bottom:6px;
+    padding-left: 6px;
+    padding-right: 6px;
+	font-style: normal;
+    text-align:left;
+    line-height: 18px;
+    float: left;
+    width: 99%;
+    height: 22px;
+    min-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	color: #fff;
+  	text-shadow: 0 -1px 0 #000;
+    z-index: 81;
+}
+
+div#topic a, a:visited, a:active {
+	color: #BFC0C1;
+}
+
+div#content.has-title {
+	margin-top:22px;
+}
+
+span.timestamp {color: #ff0066;}
+span.nick {color: #8ee91f;}
